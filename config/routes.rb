@@ -3,5 +3,9 @@ Rails.application.routes.draw do
 
   root "projects#index"
 
-  get "/projects", to: "projects#index"
+
+  resources :projects
+  # replaces:
+  # get "/projects", to: "projects#index"
+  # get "/projects/:id", to: "projects#show"
 end
