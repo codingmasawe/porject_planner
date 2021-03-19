@@ -1,11 +1,18 @@
-<h1>List of upcoming coding projects</h1>
 
-<ul>
-  <% @projects.each do |prj| %>
-    <li>
-      <%= prj.title %> |
-      <%= prj.description %> | 
-      <a href=" <%= project_path(prj) %> ">Che-che-checkit</a>
-    </li>
-  <% end %>
-</ul>
+
+<div class="container">
+  <h1>List of upcoming coding projects</h1>
+
+    <% @projects.each do |prj| %>
+        <div class="card-product m-5">
+          <img src="https://media.istockphoto.com/vectors/innovation-or-innovative-idea-symbol-linear-icon-vector-id1147358759?k=6&m=1147358759&s=612x612&w=0&h=kdyU_fYNeNX-Cm_CBF9JnDw9Zn120WmSxwqUUlatl8U=" alt="">
+          <div class="card-product-infos">
+        <%= prj.title %> |
+        <%= prj.description %> | 
+        <a href=" <%= project_path(prj) %> ">Che-che-checkit</a>
+        </div>
+      </div>
+    <% end %>
+</div>
+
+
