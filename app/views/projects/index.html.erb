@@ -1,2 +1,11 @@
-<h1>Projects#index</h1>
-<p>I tested and it works</p>
+<h1>List of upcoming coding projects</h1>
+
+<ul>
+  <% @projects.each do |prj| %>
+    <li>
+      <%= prj.title %> |
+      <%= prj.description %> | 
+      <a href=" <%= project_path(prj) %> ">Che-che-checkit</a>
+    </li>
+  <% end %>
+</ul>
