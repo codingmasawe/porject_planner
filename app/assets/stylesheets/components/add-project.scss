@@ -1,0 +1,23 @@
+.add-project {
+  border-radius: 50px;
+  width: 200px;
+  height: 100px;
+  text-align:center;
+  margin: 0 auto;
+  display: block;
+  border-style: solid;
+  border-width: 0.2px;
+
+
+}
+
+.add-project a {
+  color: black;
+  text-decoration: none;
+}
+
+.add-project:hover {
+  background-color: green;
+  box-shadow: 1px 1px #888888;
+
+}
