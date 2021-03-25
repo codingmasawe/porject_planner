@@ -1,7 +1,13 @@
-<h1>Details on a Project "<%= @project.title %>"</h1>
 
-<ul>
-  <p>Title: <%= @project.title %></p>
-  <p>Details: <%= @project.description %></p>
-</ul>
+<div class="container">
+  <h1>Details on a Project "<%= @project.title %>"</h1>
+
+  <ul>
+    <p>Title: <%= @project.title %></p>
+    <p>Details: <%= @project.description %></p>
+    <p>Start Date: <%= @project.start_date %> </p>
+    <button class="small-button"><%= link_to "Back to all projects", root_path %></button>
+  </ul>
+</div>
+
 
