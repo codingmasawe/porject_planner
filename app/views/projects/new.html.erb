@@ -2,7 +2,7 @@
 $('#datepicker').datepicker({format: 'yyyy-mm-dd'});
 </script>
 
-<div class="container">
+<div class="container w-25">
   <%= simple_form_for @project do |f| %>
     <%= f.input :title %>
     <%= f.input :description %>
@@ -11,3 +11,5 @@ $('#datepicker').datepicker({format: 'yyyy-mm-dd'});
     <%= f.button :submit %>
   <% end %>
 </div>
+
+

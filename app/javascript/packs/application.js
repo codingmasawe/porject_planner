@@ -8,7 +8,6 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-require 'simple-form-datepicker'
 //= require jquery.ui.all
 
 
@@ -21,4 +20,9 @@ require 'simple-form-datepicker'
 // const imagePath = (name) => images(name, true)
 
 
-//= require bootstrap-datepicker
+import flatpickr from "flatpickr";
+
+
+
+
+
