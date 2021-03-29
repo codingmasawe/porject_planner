@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   root "projects#index"
 
 
-  resources :projects do
-    resources :comments
-  end
+  resources :projects
   # replaces:
   # get "/projects", to: "projects#index"
   # get "/projects/:id", to: "projects#show"
